@@ -81,7 +81,6 @@ function checkScore() {
 
 function resetGame() {
     const button = document.getElementById("restart");
-    console.log("button click");
     button.addEventListener("click", () => {
         startCells = [
             "", "", "",
@@ -90,5 +89,8 @@ function resetGame() {
         ];
         start = "circle";
     });
+    
+    console.log(startCells);
+    console.log(start);
     checkScore();
 }
